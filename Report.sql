@@ -11,6 +11,8 @@ having count(Id) <4
 )
 
 
---update  ReportMain set CurrentFlowDetailId = 10 where  id in(select reportmainid from temp2)
+update  ReportMain set CurrentFlowDetailId = 10 where  id in(select reportmainid from temp2)
 
---delete from reportflow where reportmainid in(select reportmainid from temp2) and (flowdetailid=0 or flowdetailid = 12)
+delete from reportflow where reportmainid in(select reportmainid from temp2) and (flowdetailid=0 or flowdetailid = 12)
+
+select * from table
