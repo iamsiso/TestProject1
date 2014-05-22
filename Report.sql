@@ -15,4 +15,4 @@ update  ReportMain set CurrentFlowDetailId = 10 where  id in(select reportmainid
 
 delete from reportflow where reportmainid in(select reportmainid from temp2) and (flowdetailid=0 or flowdetailid = 12)
 
-select * from table
+select * from table where id ='这是原作者的修改'
